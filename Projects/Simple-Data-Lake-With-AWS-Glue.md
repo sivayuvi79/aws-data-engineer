@@ -1,13 +1,17 @@
 ## Project Objective
 
-This project demonstrates how to build a simple data lake using AWS services. The data lake leverages Amazon S3 as the primary storage solution for raw JSON files. Here's what you'll accomplish:
+This project demonstrates how to build a modern data analytics platform for a music streaming company (DeFtunes) using AWS services and best practices. The solution leverages a medallion architecture to enable scalable, reliable, and insightful analytics.
 
-1. **Data Transformation**: Use AWS Glue ETL to transform raw JSON files into a structured format.
-2. **Data Storage**: Store the processed data back into the same S3 bucket.
-3. **Metadata Management**: Utilize AWS Glue crawlers to populate the Glue Data Catalog with metadata about the processed data.
-4. **Data Querying**: Query the data using SQL statements in Amazon Athena.
+### What You'll Accomplish
+
+1. **Data Ingestion & Transformation**: Extract purchase and streaming data from APIs and operational databases, then transform and enrich it using AWS Glue ETL.
+2. **Data Lake Storage**: Store raw and processed data in Amazon S3, organizing it into landing, silver (Iceberg tables), and gold (Redshift) zones.
+3. **Metadata Management**: Use AWS Glue crawlers to catalog data and manage metadata for discoverability and governance.
+4. **Data Modeling**: Model the data into a star schema using dbt, optimizing it for analytics and reporting.
+5. **Data Querying**: Query data efficiently using Amazon Athena and Amazon Redshift.
+6. **Infrastructure as Code**: Implement the entire pipeline and supporting infrastructure using Terraform for reproducibility and scalability.
 
 ### Optional Exploration
-Discover the impact of **compression** and **partitioning** on data storage and query performance in Amazon S3.
+Explore the impact of **compression** and **partitioning** on storage costs and query performance in Amazon S3 and Redshift.
 
-By the end of this project, you'll gain hands-on experience with AWS Glue, Amazon S3, and Amazon Athena, enabling you to build and optimize data lakes effectively.
+By the end of this project, you'll gain hands-on experience with AWS Glue, Amazon S3, Apache Iceberg, Amazon Redshift, dbt, and Terraform—empowering you to build and optimize enterprise-grade data platforms on AWS.
